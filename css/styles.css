@@ -122,8 +122,8 @@ body {
     opacity: 0;
     animation: fadeIn 3s ease-in-out;
     animation-fill-mode: both;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Call to Action Section */
