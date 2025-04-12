@@ -36,7 +36,7 @@ document.getElementById('waitlist-form').addEventListener('submit', async functi
   if (emailInput.value) {
     try {
       // Send the email to the backend
-      const response = await fetch('http://localhost:5000/submit-email', {
+      const response = await fetch('https://seven-bgc6.onrender.com/submit-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: emailInput.value }),
