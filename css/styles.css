@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    flex: 1; /* Allow the main content to take up available space */
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #aaa;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+.hero img {
+    max-width: 70%; /* Reduce the width for better alignment */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Keep the rounded corners */
+    margin-bottom: 0rem; /* Add spacing below the image */
+    display: block; /* Ensure the image is treated as a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+
+/* Learn More Content */
+#learn-more-content {
+    display: none;
+    margin-top: 20px;
+    text-align: center; /* Center all content inside this section */
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+#learn-more-content h3 {
+    color: #aaa; /* Set the color of the headings to #aaa */
+    font-size: 1.5rem; /* Match the font size of "One Alarm. One Time. One Choice" */
+    font-weight: 300; /* Match the font weight */
+    margin-bottom: 1rem; /* Add spacing below the headings */
+    text-align: center; /* Center the headings */
+}
+
+.description, .features, .story {
+    margin-bottom: 20px;
+    text-align: center; /* Center the descriptions */
+}
+
+/* What is Seven? Section */
+.description {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-fill-mode: both;
+}
+
+/* Features Section */
+.features h3 {
+    margin-left: 0; /* Reset the margin to align the heading with the page */
+    text-align: center; /* Center the heading */
+}
+
+.features {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-fill-mode: both;
+    text-align: center; /* Align the entire section to the left */
+    margin-left: 0px; /* Move the section slightly to the right */
+}
+
+.features ul {
+    list-style-type: disc; /* Keep bullet points */
+    padding-left: 100px; /* Add padding to align the list properly */
+    margin: 0; /* Remove auto-centering */
+    display: block; /* Ensure the list spans the full width */
+    text-align: left; /* Align the text within the list to the left */
+}
+
+.features ul li {
+    margin-bottom: 10px; /* Add spacing between each feature */
+}
+
+/* The Story Behind Seven Section */
+.story {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-fill-mode: both;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+}
+
+.cta p {
+    font-size: 1rem; /* Match the font size of "Features" */
+    font-weight: 300; /* Match the font weight */
+    color: #aaa; /* Set the font color to #aaa */
+    margin-bottom: 5px; /* Reduce the space below "Join the Ritual" */
+}
+
+.cta .follow-text {
+    font-size: 1rem; /* Match the font size of "Features" */
+    font-weight: 300; /* Match the font weight */
+    color: #aaa; /* Set the font color to #aaa */
+    margin-top: 0; /* Remove extra space above "Follow @almost_stable" */
+}
+
+.cta a {
+    display: inline-block;
+    margin: 7px;
+    padding: 7px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta a:hover {
+    background-color: #555;
+}
+
+/* Email Form */
+#email-form {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+#email-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#email-form input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+
+#email-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#email-form button:hover {
+    background-color: #555;
+}
+
+#success-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: 500;
+    display: none; /* Hide the success message initially */
+}
+
+/* Creator Section */
+.creator {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the heading horizontally */
+    margin: 0 auto 5px auto; /* Reduce bottom margin to reduce space with footer */
+    padding: 8px 12px; /* Reduce padding to make the box smaller */
+    max-width: 400px; /* Reduce the maximum width of the box */
+    background-color: #1a1a1a; /* Slightly darker background for contrast */
+    border-radius: 10px;
+    opacity: 0; /* Start with hidden */
+    animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
+    animation-delay: 4s; /* Delay the animation for better timing */
+    animation-fill-mode: both; /* Ensure the animation persists */
+}
+
+.creator img {
+    width: 80px; /* Reduce the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 8px; /* Add space below the image */
+}
+
+.creator h3 {
+    font-size: 0.9rem; /* Reduce the font size of the heading */
+    font-weight: 500;
+    color: #aaa;
+    margin: 0 0 8px 0; /* Reduce bottom margin */
+    text-align: center; /* Ensure the heading is centered */
+}
+
+.creator p {
+    font-size: 0.7rem; /* Reduce the font size of the text */
+    font-weight: 300;
+    color: #ccc;
+    margin: 2px 0; /* Reduce space between details */
+    text-align: center; /* Align the description to the center */
+    width: 100%; /* Ensure the description spans the full width */
+}
+
+.creator a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.creator a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: center; /* Fix the footer at the bottom of the page */
+    bottom: 0; /* Align it to the bottom */
+    width: 100%; /* Ensure it spans the full width of the page */
+    text-align: center;
+    padding: 5px 0; /* Reduce padding for a smaller height */
+    font-size: 0.7rem; /* Make the text smaller */
+    color: rgba(102, 102, 102, 0.5); /* Make the text barely visible */
+    background-color: transparent; /* Keep the background transparent */
+    z-index: 10; /* Ensure it stays above other elements */
+    opacity: 0; /* Start with hidden */
+    animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
+    animation-delay: 4.5s; /* Delay the animation for better timing */
+    animation-fill-mode: both; /* Ensure the animation persists */
+}
+
+.instagram-link {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.instagram-link:hover {
+    color: #fff;
+}
+
+.instagram-logo {
+    width: 16px; /* Adjust the size of the logo */
+    height: 16px;
+    margin-left: 5px; /* Add spacing between the text and the logo */
+    vertical-align: middle; /* Align the logo with the text */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
