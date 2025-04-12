@@ -1,5 +1,8 @@
 # Seven - The 7AM Clock
 
+## Live Demo
+Visit the live version of this project here: [Seven - The 7AM Clock](https://MKSourabh.github.io/Seven)
+
 Seven is a minimalist timepiece that only rings once a day — at 7:00 AM. This project includes a frontend for user interaction and a backend to handle email submissions and store them in a text file.
 
 ---
