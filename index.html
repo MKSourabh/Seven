@@ -55,10 +55,11 @@
         <h3>Join the Waitlist</h3>
         <form id="waitlist-form" action="https://formsubmit.co/kireetiking009@gmail.com" method="POST">
           <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <!-- Disable CAPTCHA -->
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+          <input type="hidden" name="_template" value="table">
           <button type="submit">Submit</button>
-        </form>
+        </form>        
         <p id="success-message" class="hidden">Thank you! You've been added to the waitlist.</p>
       </div>
       <section class="creator">
