@@ -1,9 +1,9 @@
-# Seven - The 7AM Clock
+# Seven - The 7 AM Clock
+
+Seven is a minimalist timepiece that only rings once a day, at 7:00 AM. This project includes a frontend for user interaction.
 
 ## Live Demo
-Visit the live version of this project here: [Seven - The 7AM Clock](https://MKSourabh.github.io/Seven)
-
-Seven is a minimalist timepiece that only rings once a day — at 7:00 AM. This project includes a frontend for user interaction.
+Visit the live version of this project here: [Seven - The 7 AM Clock](https://MKSourabh.github.io/Seven)
 
 ---
 
@@ -26,6 +26,7 @@ Seven is a minimalist timepiece that only rings once a day — at 7:00 AM. This 
 ---
 
 ## **Project Structure**
+
 ```
 Seven/
 ├── css/
@@ -34,7 +35,14 @@ Seven/
 │   ├── script.js         # Frontend interactivity
 ├── index.html            # Frontend HTML
 ├── README.md             # Project documentation
+
 ```
+
+## 👨‍💻 Creator
+
+Made by [@MKSourabh](https://github.com/MKSourabh)  
+📫 Email: [kireetisourabhmangalampally@gmail.com](mailto:kireetisourabhmangalampally@gmail.com)  
+📸 Instagram: [@mk__sourabh](https://instagram.com/mk__sourabh)
 
 ---
 
